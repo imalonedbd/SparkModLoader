@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phasmophobia Mod Loader</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>Built for What<br>Comes Next.</h1>
+            <p>Future-ready tools for teams moving at the speed of innovation.</p>
+            <button class="btn-primary" onclick="document.getElementById('mods-section').scrollIntoView()">GET STARTED</button>
+            
+            <div class="logo-placeholder">
+                <div class="logo-shape"></div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <!-- Mods Section -->
+            <section id="mods-section" class="mods-section">
+                <h2>Available Mods</h2>
+                <div id="mods-container" class="mods-grid"></div>
+            </section>
+
+            <!-- Settings Section -->
+            <section class="settings-section">
+                <h2>Settings</h2>
+                <div class="settings-container">
+                    <label>
+                        <input type="checkbox" id="auto-update" checked>
+                        Auto-update mods
+                    </label>
+                    <label>
+                        <input type="checkbox" id="notifications" checked>
+                        Enable notifications
+                    </label>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-links">
+                <a href="#">YouTube</a>
+                <span>→</span>
+                <a href="#">Twitter</a>
+                <span>→</span>
+                <a href="#">Instagram</a>
+                <span>→</span>
+                <a href="#">Facebook</a>
+                <span>→</span>
+            </div>
+
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>PRODUCT</h4>
+                    <a href="#">Technology</a>
+                    <a href="#">Integrations</a>
+                    <a href="#">Releases</a>
+                    <a href="#">Status</a>
+                </div>
+
+                <div class="footer-section">
+                    <h4>RESOURCES</h4>
+                    <a href="#">Docs</a>
+                    <a href="#">API Reference</a>
+                    <a href="#">Tutorials</a>
+                    <a href="#">System Guide</a>
+                </div>
+
+                <div class="footer-section">
+                    <h4>COMPANY</h4>
+                    <a href="#">Team</a>
+                    <a href="#">Culture</a>
+                    <a href="#">Jobs</a>
+                    <a href="#">Press Kit</a>
+                </div>
+
+                <div class="footer-section">
+                    <h4>LEGAL</h4>
+                    <a href="#">Imprint</a>
+                    <a href="#">Data Policy</a>
+                    <a href="#">Cookie Policy</a>
+                    <a href="#">Accessibility</a>
+                    <a href="#">Terms of Use</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="logo-text">VOID LOADER</div>
+                <p>In the new era of technology we take a lot in the future with certainty and pride to for our company and business.</p>
+                <div class="newsletter">
+                    <input type="email" placeholder="NAME@EMAIL.COM">
+                    <button>SUBSCRIBE</button>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Modal for Mod Config -->
+    <div id="config-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="config-title">Mod Configuration</h2>
+            <div id="config-details"></div>
+            <button class="btn-primary" onclick="closeModal()">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
